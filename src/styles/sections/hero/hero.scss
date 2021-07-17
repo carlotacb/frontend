@@ -1,4 +1,4 @@
-$fade-height: 200px;
+$fade-height: 100px;
 
 .section--hero {
   position: relative;
@@ -6,12 +6,11 @@ $fade-height: 200px;
   display: flex;
   overflow: hidden;
   max-width: unset;
-  height: 900px;
+  height: 400px;
   max-height: calc(100vh - 8rem);
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: $fade-height / 2;
   background-color: $c-bg-dark;
   place-items: center;
 }
@@ -52,8 +51,9 @@ $fade-height: 200px;
 
   &__title {
     margin: 0 0 0.2em -0.08em;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 400;
+    text-align: center;
   }
 
   &__more-info {
@@ -78,5 +78,6 @@ $fade-height: 200px;
 }
 
 .apply-button {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
 }

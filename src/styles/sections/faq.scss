@@ -7,6 +7,17 @@
   }
 }
 
+.faq__section {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.faq__text {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: justify;
+}
+
 .faq {
   display: flex;
   flex-wrap: wrap;
