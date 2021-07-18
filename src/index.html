@@ -322,7 +322,7 @@
                 <div class="mySlides fade">
                   <img src="assets/photos/Photo3.jpg" alt="Photo3">
                 </div>
-                
+
                 <div class="mySlides fade">
                   <img src="assets/photos/Photo4.jpg" alt="Photo4">
                 </div>
@@ -334,7 +334,7 @@
                 <div class="mySlides fade">
                   <img src="assets/photos/Photo6.jpg" alt="Photo6">
                 </div>
-                
+
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -384,7 +384,7 @@
                         aria-expanded="false"
                         aria-controls="faq-teams-0"
                       >
-                        Are you persuasive, write and speak well in english? Come raise lots of moneys. 
+                        Are you persuasive, write and speak well in english? Come raise lots of moneys.
                       </button>
                     </dt>
                     <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -437,7 +437,7 @@
                     </dt>
                     <dd itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                       <p class="faq__answer" itemprop="text" aria-hidden="true" id="faq-teams-0">
-                        HackUPC wouldn't be possible without the hackers, so our job is to promote all of our assocation's events to everyone! We take charge in mantaining our social media active, creating content regularly and answering all your questions or doubts. We need creative minds and people who are up to date with social media! 
+                        HackUPC wouldn't be possible without the hackers, so our job is to promote all of our assocation's events to everyone! We take charge in mantaining our social media active, creating content regularly and answering all your questions or doubts. We need creative minds and people who are up to date with social media!
                       </p>
                     </dd>
                   </div>
@@ -597,23 +597,15 @@
               </div>
             </div>
           </div>
-          <h3 class="faq__others-title">Tienes dudas?</h3>
+          <h3 class="faq__others-title">Any questions?</h3>
+            <p class="faq__others-answer">
+              You can contact us via email at <a href="mailto:contact@hackupc.com">contact@hackupc.com</a>
+            </p>
+            <p class="faq__others-answer">
+            On <strong>July 27th at 19h</strong> we'll do a livestream in
+            <a rel="noopener noreferrer" href="https://www.twitch.tv/hackersupc" target="_blank">our Twitch channel</a> to explain everything in detail and answer any questions.
+          </p>
           <p class="faq__others-answer">
-            El dia <strong>27 de Julio a las 19h</strong> haremos un directo en nuestro canal de
-            <a rel="noopener noreferrer" href="https://www.twitch.tv/hackersupc" target="_blank">Twitch</a>! <br />
-            Si aun sigues con dudas, contacta con nosotros.
-            <a
-              href="https://my.hackupc.com"
-              class="classic-button apply-button"
-              role="button"
-              data-ga-apply-button
-              data-location="hero"
-              data-role="hacker"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="classic-button__text">Contacta con nosotros</span>
-            </a>
           </p>
         </div>
       </section>
@@ -946,15 +938,15 @@
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
+        if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+            slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";  
+        slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
       }
 
