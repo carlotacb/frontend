@@ -256,7 +256,7 @@
 
       <div style="text-align: center">
         <a
-          href="https://my.hackupc.com"
+          href="https://hackersatupc.typeform.com/to/XT4PGI9g"
           class="classic-button apply-button"
           role="button"
           data-ga-apply-button
@@ -268,18 +268,7 @@
           <span class="classic-button__text">Apply now</span>
         </a>
 
-        <a
-          href="#departments"
-          class="classic-button apply-button"
-          role="button"
-          data-ga-apply-button
-          data-location="hero"
-          data-role="hacker"
-          rel="noopener noreferrer"
-        >
-          <span class="classic-button__text">Our departments</span>
-        </a>
-      </div>
+       
     </header>
 
     <nav class="nav">
@@ -326,31 +315,51 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
               </p>
-            </div>
-          </div>
-          <div class="cards__columns">
-            <div class="card card--small card--outline card--mission" style="margin-right: 20px">
-              <div>
-                <h2 class="card__title">¿Que representa ser miembro de HackUPC?</h2>
-                <p class="card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
-                </p>
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="assets/photos/Photo1.jpg" alt="Photo1">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="assets/photos/Photo2.jpg" alt="Photo2">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="assets/photos/Photo3.jpg" alt="Photo3">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/photos/Photo4.jpg" alt="Photo4">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="assets/photos/Photo5.jpg" alt="Photo5">
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="assets/photos/Photo6.jpg" alt="Photo6">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
               </div>
             </div>
-            <div class="card card--small card--outline card--mission">
-              <div>
-                <h2 class="card__title">¿Que esperamos de un organizador de HackUPC?</h2>
-                <p class="card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
-                </p>
+          </div>
+          <div class="card card--big card--outline card--mission">
+            <div>
+              <h2 class="card__title">¿Que representa ser miembro de HackUPC?</h2>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <div class="card__video">
+                <video width="80%" controls>
+                  <source src="assets/second_try.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
@@ -936,6 +945,34 @@
     <!-- Easter Egg -->
     <script>
       setTimeout(console.log.bind(console, '%c🐝 BIENE HACKUPC 🐝', 'font-size: 1.5em; line-height: 2;'))
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
     </script>
     <em style="display: none"
       >🐝 BIENE HACKUPC AGAIN! 💃🏽 OH NO YOU SAW ME 😱. IF YOU ARE FROM UPC 🎓 PLS SEND AN EMAIL 📧 TO DEVS@HACKUPC.COM
