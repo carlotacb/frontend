@@ -61,49 +61,51 @@ $breakpoint-mid-small-screen: 600px;
     grid-template: auto auto / auto;
   }
 
-  > img,
-  > svg {
-    width: 100%;
-    vertical-align: middle;
-  }
-
-  .mySlides {
-    display: none;
-  }
-
   /* Slideshow container */
   .slideshow-container {
     position: relative;
     max-width: 80%;
     margin: auto;
-  }
+    margin-top: 2rem;
 
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    border-radius: 0 3px 3px 0;
-    color: #ffff;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.6s ease;
-  }
+    > img,
+    > svg {
+      width: 100%;
+      vertical-align: middle;
+    }
 
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+    .mySlides {
+      display: none;
+      text-align: center;
+    }
 
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      border-radius: 0 3px 3px 0;
+      color: #ffff;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.6s ease;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
   }
 }
 
