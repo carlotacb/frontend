@@ -1,4 +1,4 @@
-const GOOGLE_ANALYTICS_MEASUREMENT_ID = 'G-WFBH19BZ64'
+const GOOGLE_ANALYTICS_MEASUREMENT_ID = '279801041'
 
 if (process.env.NODE_ENV === 'production') {
   const script = document.createElement('script')
@@ -26,23 +26,6 @@ applyButtons.forEach((elem) => {
         label: 'Apply button clicked',
         role: elem.dataset.role,
         location: elem.dataset.location,
-      })
-    },
-    { passive: true }
-  )
-})
-
-const navLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll(
-  '[data-ga-nav-item]'
-)
-navLinks.forEach((elem) => {
-  elem.addEventListener(
-    'click',
-    () => {
-      gtag('event', 'navbar-click', {
-        category: 'Navigation',
-        label: 'Navbar link clicked',
-        location: elem.href,
       })
     },
     { passive: true }
