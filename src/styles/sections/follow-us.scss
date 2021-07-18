@@ -1,8 +1,8 @@
 .section--follow-us {
-  background-color: $c-bg-dark;
+  background-color: $c-faq-bg;
 
   .content__wrapper {
-    padding: 8rem 1rem;
+    padding: 4rem 1rem;
   }
 }
 
@@ -13,7 +13,7 @@
 }
 
 .follow-us__subtitle {
-  margin: 0.5rem 0 3.25rem;
+  margin: 1rem 0;
   color: $c-primary;
   font-size: 1.75rem;
   font-weight: 600;
