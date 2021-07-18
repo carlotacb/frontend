@@ -6,11 +6,12 @@ $fade-height: 100px;
   display: flex;
   overflow: hidden;
   max-width: unset;
-  height: 400px;
+  height: 460px;
   max-height: calc(100vh - 8rem);
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 70px;
   background-color: $c-bg-dark;
   place-items: center;
 }
@@ -56,30 +57,12 @@ $fade-height: 100px;
     text-align: center;
   }
 
-  &__more-info {
-    display: grid;
-    font-size: 0.25em;
-    font-weight: 600;
-    grid-template: auto / 1fr 1fr 1fr;
+  &__beginning {
+    display: block;
+    font-size: 0.6em;
+    line-height: 1.5;
+    text-transform: initial;
   }
-
-  &__online {
-    color: $c-primary;
-    justify-self: start;
-  }
-
-  &__date {
-    justify-self: center;
-  }
-
-  &__duration {
-    justify-self: end;
-  }
-}
-
-.apply-button {
-  margin-top: 1rem;
-  margin-left: 2rem;
 }
 
 .align-center {
