@@ -13,10 +13,14 @@
 }
 
 .follow-us__subtitle {
-  margin: 1rem 0;
+  margin: 2rem 0 0.5rem;
   color: $c-primary;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
+
+  & ~ & {
+    margin-top: 3rem;
+  }
 }
 
 .follow-us__list {
@@ -62,10 +66,6 @@
   .follow-us__title {
     font-size: 2.5rem;
   }
-
-  .follow-us__subtitle {
-    font-size: 1.25rem;
-  }
 }
 @media only screen and (max-width: 7 * 5rem + 1rem) {
   .follow-us__list {
@@ -76,10 +76,6 @@
 @media only screen and (max-width: 29.3rem) {
   .follow-us__title {
     font-size: 2rem;
-  }
-
-  .follow-us__subtitle {
-    font-size: 1rem;
   }
 
   .follow-us__item {
