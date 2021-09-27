@@ -45,7 +45,7 @@
     "postcss-focus-visible": "^5.0.0",
     "postcss-loader": "^5.2.0",
     "postcss-preset-env": "^6.7.0",
-    "postcss-reporter": "^7.0.2",
+    "postcss-reporter": "^7.0.3",
     "prettier": "2.2.1",
     "prettier-config-standard": "^4.0.0",
     "purgecss-webpack-plugin": "^4.0.3",
